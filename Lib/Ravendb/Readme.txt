@@ -1,1 +1,0 @@
-Kooboo CMS ravendb provider compatible with newer and RavenDB-Unstable-Build-283 version, because of the older version had some issues on dynamic object.

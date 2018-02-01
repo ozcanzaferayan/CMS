@@ -18,6 +18,7 @@ Kooboo.CMS.Web.Publish.xml
 *.log
 *.user
 
+Lib/
 Lib/AWS/
 Lib/BouncyCastle/
 Lib/DnsQuery/
