@@ -6,15 +6,11 @@
 // See the file LICENSE.txt for details.
 // 
 #endregion
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using Kooboo.CMS.Content.Query;
 using Kooboo.CMS.Content.Models;
-using MongoDB.Driver.Builders;
 using QueryBuilder = MongoDB.Driver.Builders;
-using MongoDB.Bson;
 namespace Kooboo.CMS.Content.Persistence.MongoDB.Query
 {
     public class MongoDBCategoriesQuery : MongoDBQuery
