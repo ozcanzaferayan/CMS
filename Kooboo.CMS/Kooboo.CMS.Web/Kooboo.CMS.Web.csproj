@@ -26,6 +26,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <MvcProjectUpgradeChecked>true</MvcProjectUpgradeChecked>
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -64,6 +65,10 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\..\Lib\JSON.NET\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject, Version=3.0.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Ninject\Ninject.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -2443,6 +2448,10 @@
       <Project>{570cd9d3-75d2-468a-8245-45bdca57432e}</Project>
       <Name>Kooboo.CMS.Caching</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Kooboo.CMS.Common.Runtime.Dependency.Ninject\Kooboo.CMS.Common.Runtime.Dependency.Ninject.csproj">
+      <Project>{94a4a4ba-f5eb-44cb-9cd3-b240b80ce686}</Project>
+      <Name>Kooboo.CMS.Common.Runtime.Dependency.Ninject</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Kooboo.CMS.Common\Kooboo.CMS.Common.csproj">
       <Project>{ab6dde14-eeb6-4497-80a0-d148a0a692b5}</Project>
       <Name>Kooboo.CMS.Common</Name>
@@ -2560,6 +2569,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\Sites\Views\PageDesign\HtmlBlockItem.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
